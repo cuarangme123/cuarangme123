@@ -1,23 +1,29 @@
-set number 
-set tabstop=4 
-set softtabstop=4
-set smartindent
-set ruler " Always shows location in file (line#)
-set smarttab " Autotabs for certain code
-set shiftwidth=4
-set cursorline
-set nohlsearch
-set relativenumber
-" autocmd BufEnter * silent! lcd %:p:h
-" source file 
+set cursorline 
 set autochdir
-source C:\Users\Administrator\AppData\Local\nvim\vim-init\plugins.vim 
-source C:\Users\Administrator\AppData\Local\nvim\vim-init\key_bind.vim
-source C:\Users\Administrator\AppData\Local\nvim\vim-init\vim-rainbow.vim
-"---colors------------------
-syntax enable
-set background=dark
-colorscheme dracula
-set showtabline=2  
-"---------------------------
-
+set nohlsearch
+set ruler 
+set ma
+set relativenumber
+set number 
+set autoindent
+set mouse=a
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set nowrap
+call plug#begin('C:\Users\LENOVO\AppData\Local\nvim\autoload\plugged')
+Plug 'https://github.com/scrooloose/nerdtree'
+Plug 'dracula/vim', { 'name': 'dracula' }
+Plug 'https://github.com/joshdick/onedark.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'voldikss/vim-floaterm'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+Plug 'morhetz/gruvbox'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+source C:\Users\LENOVO\AppData\Local\nvim\config\keybind.vim
+source C:\Users\LENOVO\AppData\Local\nvim\config\airlines.vim
+source C:\Users\LENOVO\AppData\Local\nvim\config\coc.vim
+source C:\Users\LENOVO\AppData\Local\nvim\config\neovide.vim
+colorscheme gruvbox  
+hi Normal guibg=NONE ctermbg=NONE
