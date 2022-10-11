@@ -39,5 +39,6 @@ autocmd Filetype python map <F5> : CompileAndRunPYTHON <enter>
 "pluggin keybind 
 map <F2> :NERDTree <Enter>
 map <F3> :FloatermNew  <enter>
-
+"copy to clipboard
+map <C-y> "+y
 
