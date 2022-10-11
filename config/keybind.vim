@@ -32,7 +32,7 @@ function! TermWrapper(command) abort
 	exec 'startinsert'
 	autocmd BufEnter <buffer> startinsert
 endfunction
-command! -nargs=0 CompileAndRunCPP call TermWrapper(printf('g++ -std=c++11 %s && a.exe', expand('%')))
+command! -nargs=0 CompileAndRunCPP call TermWrapper(printf('g++ -std=c++14 %s && a.exe', expand('%')))
 command! -nargs=0 CompileAndRunPYTHON call TermWrapper(printf('python %s', expand('%')))
 autocmd Filetype cpp  map <F5> : CompileAndRunCPP <enter>
 autocmd Filetype python map <F5> : CompileAndRunPYTHON <enter>
