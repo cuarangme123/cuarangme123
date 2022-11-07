@@ -26,6 +26,7 @@ Plug 'morhetz/gruvbox'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'sainnhe/sonokai'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mhinz/vim-startify'
 call plug#end()
 source C:\Users\LENOVO\AppData\Local\nvim\config\keybind.vim
 source C:\Users\LENOVO\AppData\Local\nvim\config\airlines.vim
@@ -33,6 +34,7 @@ source C:\Users\LENOVO\AppData\Local\nvim\config\coc.vim
 source C:\Users\LENOVO\AppData\Local\nvim\config\neovide.vim
 source C:\Users\LENOVO\AppData\Local\nvim\config\Floaterm.vim
 source C:\Users\LENOVO\AppData\Local\nvim\config\compiler.vim
+source C:\Users\LENOVO\AppData\Local\nvim\config\start_screen.vim
 set t_Co=256
 set background=dark
 colorscheme sonokai
