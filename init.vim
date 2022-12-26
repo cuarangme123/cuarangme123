@@ -39,3 +39,4 @@ set t_Co=256
 set background=dark
 colorscheme sonokai
 highlight! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
+autocmd BufNewFile *.cpp 0r C:\Users\LENOVO\AppData\Local\nvim\config\templates\skeleton.cpp
